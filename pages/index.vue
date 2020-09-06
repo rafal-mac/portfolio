@@ -1,27 +1,22 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        Rafal Maciejewski
-      </h1>
-      <h2 class="subtitle">
-        fullstack developer
-      </h2>
-      <links />
-    </div>
+  <div class="fullscreen-header d-flex flex-column">
+    <h1 class="title">
+      Rafal Maciejewski
+    </h1>
+    <h2 class="subtitle">
+      fullstack developer
+    </h2>
+    <menu-links class="mt-auto" />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-import Logo from '~/components/atoms/Logo.vue'
-import Links from '~/components/atoms/Links.vue'
+import MenuLinks from '@/components/molecules/MenuLinks.vue'
 
 @Component({
   components: {
-    Logo,
-    Links
+    MenuLinks
   }
 })
 export default class Index extends Vue {
@@ -31,34 +26,25 @@ export default class Index extends Vue {
 <style>
 @import 'https://unpkg.com/chota@latest';
 
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+display: block;
+font-weight: 300;
+font-size: 100px;
+color: #35495e;
+letter-spacing: 1px;
 }
 
 .subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+font-weight: 300;
+font-size: 42px;
+color: #526488;
+word-spacing: 5px;
+padding-bottom: 15px;
 }
 
-.links {
-  padding-top: 15px;
+.fullscreen-header {
+min-height: 100vh;
 }
 </style>
