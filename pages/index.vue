@@ -3,43 +3,34 @@
     <div>
       <logo />
       <h1 class="title">
-        portfolio
+        Rafal Maciejewski
       </h1>
       <h2 class="subtitle">
-        I&#39;m a web dev
+        fullstack developer
       </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <links />
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import Logo from '~/components/Logo.vue'
+import { Component, Vue } from 'nuxt-property-decorator'
+import Logo from '~/components/atoms/Logo.vue'
+import Links from '~/components/atoms/Links.vue'
 
-export default Vue.extend({
+@Component({
   components: {
-    Logo
+    Logo,
+    Links
   }
 })
+export default class Index extends Vue {
+}
 </script>
 
 <style>
+@import 'https://unpkg.com/chota@latest';
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
