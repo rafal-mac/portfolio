@@ -29,6 +29,7 @@ export default class Navbar extends Vue {
 <style>
 .link{
   font-size: 80px;
+  color: white;
 }
 .navbar {
   position: fixed;
@@ -43,7 +44,7 @@ export default class Navbar extends Vue {
   min-height: 100vh;
   color: white;
   text-align: left;
-  background: white;
+  background: #007bff;
   height: 100vh;
   padding-left: 40px;
 }

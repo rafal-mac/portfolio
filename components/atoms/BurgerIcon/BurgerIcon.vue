@@ -56,7 +56,7 @@ export default class BurgerIcon extends Vue {
     opacity: 0.7; }
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::after {
-    background-color: #007bff; }
+    background-color: white; }
 
 .hamburger-box {
   width: 40px;
@@ -71,7 +71,7 @@ export default class BurgerIcon extends Vue {
   .hamburger-inner, .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: #007bff;
+    background-color: white;
     position: absolute;
     transition-property: transform;
     transition-duration: 0.15s;
