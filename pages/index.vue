@@ -1,39 +1,16 @@
 <template>
   <div>
     <my-header />
-    <div class="profile d-flex">
-      <profile class="my-auto mx-auto" />
-    </div>
-    <div class="d-flex flex-column">
-      <div class="mx-auto">
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
-        <p>words words words words words words words words words words words words words words words words words words words words</p>
+    <div id="scroll">
+      <div class="profile d-flex">
+        <profile class="my-auto mx-auto" />
+      </div>
+      <div class="d-flex flex-column">
+        <div class="mx-auto">
+          <p v-for="i of 20" :key="i">
+            words words words words words words words words words words words words words words words words words words words words
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -51,10 +28,36 @@ import Profile from '~/components/molecules/Profile/Profile.vue'
   }
 })
 export default class Index extends Vue {
+  section: HTMLElement | null = null;
+  currentPixel: number = 0;
+
+  mounted (): void {
+    this.section = document.querySelector('#scroll')
+    this.currentPixel = window.pageYOffset
+
+    this.looper()
+  }
+
+  looper (): void {
+    const newPixel = window.pageYOffset
+    const diff = newPixel - this.currentPixel
+    const speed = diff * 0.15
+
+    this.section!.style.transform = 'skewY(' + speed + 'deg)'
+
+    this.currentPixel = newPixel
+
+    requestAnimationFrame(this.looper)
+  }
 }
 </script>
 <style>
 .profile {
   height: 100vh;
+}
+
+#scroll {
+  transition: transform .25s;
+  will-change: transform;
 }
 </style>

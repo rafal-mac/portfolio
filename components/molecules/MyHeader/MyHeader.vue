@@ -1,11 +1,8 @@
 <template>
   <div>
     <div class="header d-flex flex-row justify-content-between">
-      <h1 class="text-dark d-sm-block d-none">
-        Rafal Maciejewski
-      </h1>
-      <h1 class="text-dark d-sm-none d-block">
-        Rafal
+      <h1 class="text-dark">
+        portfolio_
       </h1>
       <burger-icon class="burger" @toggle-active="toggleActive" />
     </div>
