@@ -2,8 +2,8 @@
   <div>
     <my-header />
     <div id="scroll">
-      <div class="profile d-flex">
-        <profile class="my-auto mx-auto" />
+      <div class="fullscreen-profile">
+        <profile />
       </div>
       <div class="d-flex flex-column">
         <div class="mx-auto">
@@ -52,7 +52,7 @@ export default class Index extends Vue {
 }
 </script>
 <style>
-.profile {
+.fullscreen-profile {
   height: 100vh;
 }
 
