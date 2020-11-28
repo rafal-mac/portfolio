@@ -31,7 +31,7 @@ export default class Header extends Vue {
 </script>
 <style>
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;

@@ -28,9 +28,15 @@ export default class Navbar extends Vue {
 
 <style>
 .link{
-  font-size: 80px;
+  font-size: 50px;
   color: #007bff;
 }
+@media only screen and (min-width: 768px) {
+  .link {
+    font-size: 80px;
+  }
+}
+
 .navbar {
   position: fixed;
   z-index: 2500;
@@ -48,6 +54,7 @@ export default class Navbar extends Vue {
   height: 100vh;
   padding-left: 40px;
 }
+
 .is-active {
   transform: translate(0, 0);
   -webkit-transform: translate(0, 0);
