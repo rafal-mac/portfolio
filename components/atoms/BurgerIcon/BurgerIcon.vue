@@ -2,7 +2,6 @@
   <div
     :class="{ 'is-active': isActive }"
     class="hamburger hamburger--elastic"
-    type="button"
     aria-label="Menu"
     aria-controls="navigation"
     @click="toggleActive"
