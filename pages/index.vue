@@ -1,7 +1,9 @@
 <template>
   <div>
     <my-header />
-    <div class="bg-white" style="height: 100vh;"></div>
+    <div class="bg-white" style="height: 100vh;">
+      <video autoplay class="desktop-only" loop="" muted=""><source src="../assets/video.mp4" type="video/mp4"></video>
+    </div>
   </div>
 </template>
 
