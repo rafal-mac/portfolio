@@ -4,7 +4,7 @@
     <div id="scroll" class="mx-4">
       <profile />
       <div class="d-flex flex-column">
-        <div id="words" class="mx-auto">
+        <div id="about" class="mx-auto">
           <p v-for="i of 20" :key="i">
             words words words words words words words words words words words words words words words words words words words words
           </p>

@@ -1,16 +1,16 @@
 <template>
   <div :class="{ 'is-active': isActive }" class="navbar">
     <div class="d-flex flex-column">
-      <a href="/about" class="link mr-auto">
+      <a href="#about" class="link mr-auto">
         About
       </a>
-      <a href="/works" class="link mr-auto">
+      <a href="#works" class="link mr-auto">
         Projects
       </a>
-      <a href="/experience" class="link mr-auto  d-sm-block d-none">
+      <a href="#experience" class="link mr-auto  d-sm-block d-none">
         Experience
       </a>
-      <a href="/experience" class="link mr-auto  d-sm-none d-block">
+      <a href="#experience" class="link mr-auto  d-sm-none d-block">
         CV
       </a>
     </div>

@@ -18,7 +18,7 @@ export default class Spinner extends Vue {
     mounted (): void {
       window.setInterval(() => {
         this.changeWhoIAm()
-      }, 1500)
+      }, 2000)
     }
 
     changeWhoIAm (): void {
@@ -29,7 +29,7 @@ export default class Spinner extends Vue {
 </script>
 <style>
 .additional-info {
-  font-size: 2rem;
+  font-size: 4vw;
   line-height: 100%;
 }
 </style>
