@@ -1,7 +1,7 @@
 <template>
   <div class="additional-info mx-auto d-flex align-items-center">
     <div>
-      <p class="m-0">
+      <p class="m-0 text-nowrap">
         {{ whoAmI[0] }}
       </p>
     </div>

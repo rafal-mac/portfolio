@@ -49,9 +49,4 @@ export default class Profile extends Vue {
   font-size: 15vw;
   line-height: 100%;
 }
-/* @media only screen and (min-width: 768px) {
-  .big-text {
-    font-size: 10vw;
-  }
-} */
 </style>

@@ -10,4 +10,6 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
+  /* FIXME: this is a hacky solution to the overflow caused by the spinner */
+  overflow-x: hidden;
 }
