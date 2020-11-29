@@ -1,12 +1,10 @@
 <template>
   <div>
     <my-header />
-    <div id="scroll">
-      <div class="fullscreen-profile">
-        <profile />
-      </div>
+    <div id="scroll" class="mx-4">
+      <profile />
       <div class="d-flex flex-column">
-        <div class="mx-auto">
+        <div id="words" class="mx-auto">
           <p v-for="i of 20" :key="i">
             words words words words words words words words words words words words words words words words words words words words
           </p>
@@ -52,10 +50,6 @@ export default class Index extends Vue {
 }
 </script>
 <style>
-.fullscreen-profile {
-  height: 100vh;
-}
-
 #scroll {
   transition: transform .25s;
   will-change: transform;
