@@ -32,7 +32,7 @@ export default class Profile extends Vue {
 }
 
 .who-am-i {
-  left: 10%;
+  right: 10%;
 }
 
 .spinner {
