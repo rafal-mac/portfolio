@@ -4,21 +4,27 @@
       <p class="m-0 text-nowrap">
         {{ whoAmI[0] }}
       </p>
+      <loader-bar />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
+import LoaderBar from '~/components/atoms/LoaderBar/LoaderBar.vue'
 
-@Component
+@Component({
+  components: {
+    LoaderBar
+  }
+})
 export default class Spinner extends Vue {
     whoAmI: string[] = ['web developer', 'design aficionado', 'tech enthusiast', 'team player']
 
     mounted (): void {
       window.setInterval(() => {
         this.changeWhoIAm()
-      }, 2000)
+      }, 2500)
     }
 
     changeWhoIAm (): void {
