@@ -4,7 +4,7 @@
     <div id="scroll" class="mx-4">
       <profile />
       <div class="d-flex flex-column">
-        <div id="about" class="mx-auto">
+        <div id="experience" class="mx-auto">
           <experience-list />
         </div>
       </div>

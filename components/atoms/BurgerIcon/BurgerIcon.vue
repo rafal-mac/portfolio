@@ -2,8 +2,6 @@
   <div
     :class="{ 'is-active': isActive }"
     class="hamburger hamburger--elastic"
-    aria-label="Menu"
-    aria-controls="navigation"
     @click="toggleActive"
   >
     <span class="hamburger-box">
@@ -13,16 +11,15 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Emit } from 'nuxt-property-decorator'
+import { Component, Vue, Prop, Emit } from 'nuxt-property-decorator'
 
 @Component
 export default class BurgerIcon extends Vue {
-  isActive: boolean = false;
+  @Prop({ type: Boolean }) readonly isActive!: boolean;
 
   @Emit()
   toggleActive (): boolean {
-    this.isActive = !this.isActive
-    return this.isActive
+    return !this.isActive
   }
 }
 </script>

@@ -4,9 +4,9 @@
       <h1 class="text-dark">
         portfolio_
       </h1>
-      <burger-icon class="burger" @toggle-active="toggleActive" />
+      <burger-icon class="burger" :is-active="isActive" @toggle-active="toggleActive" />
     </div>
-    <navbar :is-active="isActive" />
+    <navbar :is-active="isActive" @toggle-active="toggleActive" />
   </div>
 </template>
 

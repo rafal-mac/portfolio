@@ -43,14 +43,16 @@ export default class ExperienceCard extends Vue {
   }
 }
 .experience-card:hover {
-  -webkit-box-shadow: 0px 0px 8px 6px rgba(0,0,0,0.1);
-  box-shadow: 0px 0px 8px 6px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0px 15px 20px 1px rgba(0,0,0,0.1);
+  box-shadow: 0px 15px 20px 1px rgba(0,0,0,0.1);
 }
 
 .logo {
   transition: transform 0.25s;
   height: 210px;
+  width: 210px;
 }
+
 .experience-card:hover .logo {
   transform: scale(1.10);
 }
