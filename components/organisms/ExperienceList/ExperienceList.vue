@@ -1,7 +1,9 @@
 <template>
   <div>
     <experience-card
-      position-name="Fullstack Web Developer - Tutorful"
+      position-name="Fullstack Web Developer"
+      company-name="Tutorful"
+      position-link="https://tutorful.co.uk/"
       date="June 2020 - Present"
       employment-type="Industry Placement"
     >
@@ -26,7 +28,9 @@
 
     <experience-card
       class="mt-3"
-      position-name="Junior Technical Product Manager – Coordinate Sport"
+      position-name="Junior Technical Product Manager"
+      company-name="Coordinate Sport"
+      position-link="https://coordinate.cloud/"
       date="October 2019 – June 2020"
       employment-type="Part Time"
     >

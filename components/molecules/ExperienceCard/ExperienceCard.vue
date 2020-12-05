@@ -4,7 +4,7 @@
     <div class="px-4 pb-4 pb-md-0 my-auto">
       <div class="d-flex align-items-center justify-content-between">
         <p class="position-name mb-0">
-          <b>{{ positionName }}</b>
+          <b>{{ positionName }} - <a class="text-decoration-none" :href="positionLink">{{ companyName }}</a></b>
         </p>
         <p class="d-none d-lg-block mb-0">
           <b>{{ date }}</b>
@@ -24,6 +24,8 @@ import { Component, Prop, Vue } from 'nuxt-property-decorator'
 @Component
 export default class ExperienceCard extends Vue {
   @Prop({ type: String }) readonly positionName!: string;
+  @Prop({ type: String }) readonly companyName!: string;
+  @Prop({ type: String }) readonly positionLink!: string;
   @Prop({ type: String }) readonly date!: string;
   @Prop({ type: String }) readonly employmentType!: string;
 }

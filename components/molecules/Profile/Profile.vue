@@ -31,7 +31,7 @@ export default class Profile extends Vue {
 }
 
 .who-am-i {
-  left: 50%;
+  left: 30%;
 }
 
 .dot {
