@@ -1,5 +1,5 @@
 <template>
-  <div class="fullscreen-profile position-relative d-flex flex-column">
+  <div class="fullscreen-profile d-flex flex-column">
     <div class="m-auto position-relative">
       <p class="big-text">
         Hello<span class="dot">.</span>
@@ -8,7 +8,6 @@
       </p>
       <who-am-i class="position-absolute who-am-i" />
     </div>
-    <spinner class="spinner position-absolute" />
   </div>
 </template>
 
@@ -33,13 +32,6 @@ export default class Profile extends Vue {
 
 .who-am-i {
   left: 50%;
-}
-
-.spinner {
-  top: 0;
-  left: 10vw;
-  z-index: -1;
-  opacity: 0.3;
 }
 
 .dot {

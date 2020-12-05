@@ -1,0 +1,59 @@
+<template>
+  <div class="d-flex mx-auto flex-column flex-md-row experience-card w-100">
+    <slot />
+    <div class="px-4 pb-4 pb-md-0 my-auto">
+      <div class="d-flex align-items-center justify-content-between">
+        <p class="position-name mb-0">
+          <b>{{ positionName }}</b>
+        </p>
+        <p class="d-none d-lg-block mb-0">
+          <b>{{ date }}</b>
+        </p>
+      </div>
+      <p>
+        ({{ employmentType }})
+      </p>
+      <slot name="bulletpoints" />
+    </div>
+  </div>
+</template>
+
+<script lang="ts">
+import { Component, Prop, Vue } from 'nuxt-property-decorator'
+
+@Component
+export default class ExperienceCard extends Vue {
+  @Prop({ type: String }) readonly positionName!: string;
+  @Prop({ type: String }) readonly date!: string;
+  @Prop({ type: String }) readonly employmentType!: string;
+}
+</script>
+<style scoped>
+.experience-card {
+  background-color: transparent;
+  min-height: 300px;
+  border-radius: 40px;
+  transition: box-shadow 0.25s;
+}
+@media only screen and (min-width: 1200px) {
+  .experience-card {
+    max-width: 80%;
+  }
+}
+.experience-card:hover {
+  -webkit-box-shadow: 0px 0px 8px 6px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 8px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  transition: transform 0.25s;
+  height: 210px;
+}
+.experience-card:hover .logo {
+  transform: scale(1.10);
+}
+
+.position-name {
+  font-size: 1.5rem;
+}
+</style>

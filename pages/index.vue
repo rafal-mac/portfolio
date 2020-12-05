@@ -5,9 +5,7 @@
       <profile />
       <div class="d-flex flex-column">
         <div id="about" class="mx-auto">
-          <p v-for="i of 20" :key="i">
-            words words words words words words words words words words words words words words words words words words words words
-          </p>
+          <experience-list />
         </div>
       </div>
     </div>
@@ -18,11 +16,13 @@
 import { Component, Vue } from 'nuxt-property-decorator'
 import MyHeader from '~/components/molecules/MyHeader/MyHeader.vue'
 import Profile from '~/components/molecules/Profile/Profile.vue'
+import ExperienceList from '~/components/organisms/ExperienceList/ExperienceList.vue'
 
 @Component({
   components: {
     MyHeader,
-    Profile
+    Profile,
+    ExperienceList
   }
 })
 export default class Index extends Vue {

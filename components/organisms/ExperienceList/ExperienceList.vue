@@ -1,0 +1,72 @@
+<template>
+  <div>
+    <experience-card
+      position-name="Fullstack Web Developer - Tutorful"
+      date="June 2020 - Present"
+      employment-type="Industry Placement"
+    >
+      <picture class="p-4 my-auto mx-auto">
+        <source srcset="~/assets/tutorful_logo.webp" type="image/webp">
+        <source srcset="~/assets/tutorful_logo.svg" type="image/svg+xml">
+        <b-img-lazy
+          src="../../../assets/tutorful_logo.svg"
+          class="logo"
+        />
+      </picture>
+      <template v-slot:bulletpoints>
+        <p>
+          • Working in small, autonomous teams who favour continuous integration and delivery, and test-driven
+        </p>
+        <p>
+          • <b>Vue, TypeScript</b> and <b>Nuxt</b> for frontend. PHP with <b>Laravel</b> to write APIs and job queues. <b>MySQL</b> for data
+          storage and <b>ElasticSearch</b> for search results.
+        </p>
+      </template>
+    </experience-card>
+
+    <experience-card
+      class="mt-3"
+      position-name="Junior Technical Product Manager – Coordinate Sport"
+      date="October 2019 – June 2020"
+      employment-type="Part Time"
+    >
+      <picture class="p-4 my-auto mx-auto">
+        <source srcset="~/assets/coordinate_logo.webp" type="image/webp">
+        <source srcset="~/assets/coordinate_logo.svg" type="image/svg+xml">
+        <b-img-lazy
+          src="../../../assets/coordinate_logo.svg"
+          class="logo"
+        />
+      </picture>
+      <template v-slot:bulletpoints>
+        <p>
+          • Managing a team of two developers to deliver an outstanding product driven by data
+        </p>
+        <p>
+          • Liaising between the developers, the management and the customers
+        </p>
+        <p>
+          • <b>Designing the UI & UX</b> of the product, <b>writing requirements</b> for the developers, <b>managing the backlog</b> and the roadmap
+        </p>
+      </template>
+    </experience-card>
+  </div>
+</template>
+
+<script lang="ts">
+import { Component, Vue } from 'nuxt-property-decorator'
+import ExperienceCard from '~/components/molecules/ExperienceCard/ExperienceCard.vue'
+
+@Component({
+  components: {
+    ExperienceCard
+  }
+})
+export default class ExperienceList extends Vue {
+  infoClicked: boolean = false;
+
+  openInfo (): void {
+    this.infoClicked = !this.infoClicked
+  }
+}
+</script>
