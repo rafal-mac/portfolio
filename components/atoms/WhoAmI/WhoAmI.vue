@@ -1,7 +1,6 @@
 <template>
   <div class="additional-info mx-auto d-flex align-items-center">
     <div
-      id="words-wrapper"
       class="words-wrapper"
       :class="{ 'is-loading': isLoading }"
     >
