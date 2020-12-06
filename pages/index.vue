@@ -4,8 +4,11 @@
     <div id="scroll" class="mx-4">
       <profile />
       <div class="d-flex flex-column">
-        <div id="experience" class="mx-auto">
-          <experience-list />
+        <div id="experience">
+          <experience-section />
+        </div>
+        <div id="skills">
+          <skills-section />
         </div>
       </div>
     </div>
@@ -16,13 +19,15 @@
 import { Component, Vue } from 'nuxt-property-decorator'
 import MyHeader from '~/components/molecules/MyHeader/MyHeader.vue'
 import Profile from '~/components/molecules/Profile/Profile.vue'
-import ExperienceList from '~/components/organisms/ExperienceList/ExperienceList.vue'
+import ExperienceSection from '~/components/organisms/ExperienceSection/ExperienceSection.vue'
+import SkillsSection from '~/components/organisms/SkillsSection/SkillsSection.vue'
 
 @Component({
   components: {
     MyHeader,
     Profile,
-    ExperienceList
+    ExperienceSection,
+    SkillsSection
   }
 })
 export default class Index extends Vue {
@@ -39,7 +44,7 @@ export default class Index extends Vue {
   looper (): void {
     const newPixel = window.pageYOffset
     const diff = newPixel - this.currentPixel
-    const speed = diff * 0.15
+    const speed = diff * 0.05
 
     this.section!.style.transform = 'skewY(' + speed + 'deg)'
 

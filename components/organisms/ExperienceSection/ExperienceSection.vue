@@ -76,7 +76,7 @@ import ExperienceCard from '~/components/molecules/ExperienceCard/ExperienceCard
     ExperienceCard
   }
 })
-export default class ExperienceList extends Vue {
+export default class ExperienceSection extends Vue {
   infoClicked: boolean = false;
 
   openInfo (): void {
@@ -86,17 +86,17 @@ export default class ExperienceList extends Vue {
 </script>
 <style scoped>
 .fullscreen-experience {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .experience-title-wrapper {
-  font-size: 7vw;
-  width: 80%;
-
+  font-size: 2.5rem;
+  width: 100%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .experience-title-wrapper {
-    font-size: 4vw;
+    width: 80%;
+    font-size: 5rem;
   }
 }
 .experience-title::before {

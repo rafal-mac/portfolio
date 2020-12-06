@@ -4,14 +4,14 @@
       <a href="#about" class="link mr-auto" @click="toggleActive">
         About
       </a>
-      <a href="#works" class="link mr-auto" @click="toggleActive">
-        Projects
-      </a>
       <a href="#experience" class="link mr-auto  d-sm-block d-none" @click="toggleActive">
         Experience
       </a>
       <a href="#experience" class="link mr-auto  d-sm-none d-block" @click="toggleActive">
-        CV
+        Jobs
+      </a>
+      <a href="#skills" class="link mr-auto" @click="toggleActive">
+        Skills
       </a>
     </div>
   </div>
