@@ -20,6 +20,8 @@
           <b-img-lazy
             src="../../../assets/tutorful_logo.svg"
             class="logo"
+            height="210px"
+            width="210px"
             alt="tutorful logo"
           />
         </picture>
@@ -48,6 +50,8 @@
           <b-img-lazy
             src="../../../assets/coordinate_logo.svg"
             class="logo"
+            height="210px"
+            width="210px"
             alt="coordinate sport logo"
           />
         </picture>

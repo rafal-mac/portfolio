@@ -49,8 +49,6 @@ export default class ExperienceCard extends Vue {
 
 .logo {
   transition: transform 0.25s;
-  height: 210px;
-  width: 210px;
 }
 
 .experience-card:hover .logo {
