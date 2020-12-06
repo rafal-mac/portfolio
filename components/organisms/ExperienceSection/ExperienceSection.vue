@@ -121,6 +121,6 @@ export default class ExperienceSection extends Vue {
     width: 25%;
     height: 10px;
     background: #007bff;
-}
+  }
 }
 </style>
