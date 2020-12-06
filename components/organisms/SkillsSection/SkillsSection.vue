@@ -78,13 +78,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-import ExperienceCard from '~/components/molecules/ExperienceCard/ExperienceCard.vue'
 
-@Component({
-  components: {
-    ExperienceCard
-  }
-})
+@Component
 export default class ExperienceSection extends Vue {
   infoClicked: boolean = false;
 

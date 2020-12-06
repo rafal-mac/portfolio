@@ -27,10 +27,10 @@
         </picture>
         <template v-slot:bulletpoints>
           <p>
-            • Working in small, autonomous teams who favour continuous integration and delivery, and test-driven
+            • Working in small, autonomous teams who favour continuous integration and delivery, and test-driven development
           </p>
           <p>
-            • <b>Vue, TypeScript</b> and <b>Nuxt</b> for frontend. PHP with <b>Laravel</b> to write APIs and job queues. <b>MySQL</b> for data
+            • <b>Vue, TypeScript</b> and <b>Nuxt</b> for frontend. <b>PHP</b> with <b>Laravel</b> to write APIs and job queues. <b>MySQL</b> for data
             storage and <b>ElasticSearch</b> for search results.
           </p>
         </template>
