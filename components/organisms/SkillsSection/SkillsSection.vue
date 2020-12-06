@@ -1,6 +1,6 @@
 <template>
   <div class="fullscreen-skills">
-    <div class="m-auto">
+    <div>
       <div class="d-flex position-relative skills-title-wrapper mx-auto mb-4">
         <p class="skills-title mr-auto">
           What can I do?
@@ -99,6 +99,7 @@ export default class ExperienceSection extends Vue {
 .skills-title-wrapper {
   font-size: 2.5rem;
   width: 100%;
+  padding-top: 5%;
 }
 @media only screen and (min-width: 1200px) {
   .skills-title-wrapper {

@@ -2,7 +2,7 @@
   <div class="fullscreen-experience d-flex">
     <div class="m-auto">
       <div class="d-flex position-relative experience-title-wrapper mx-auto mb-4">
-        <p class="experience-title ml-auto">
+        <p class="experience-title mr-auto mr-sm-0 ml-sm-auto">
           Where did I work?
         </p>
       </div>
@@ -111,5 +111,16 @@ export default class ExperienceSection extends Vue {
     width: 30%;
     height: 10px;
     background: #007bff;
+}
+@media only screen and (max-width: 575px) {
+  .experience-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    height: 10px;
+    background: #007bff;
+}
 }
 </style>
