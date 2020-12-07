@@ -119,28 +119,27 @@ export default class ExperienceSection extends Vue {
 }
 
 .skill-icon {
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
   margin: 30px auto;
   transition: transform 0.3s;
   border: none;
 }
 @media only screen and (min-width: 576px) {
   .skill-icon {
+    height: 150px;
+    width: 150px;
     margin: 30px
   }
 }
 
-.skill-icon:hover {
-  transform: scale(1.3);
-}
-
-@media only screen and (max-width: 575px) {
-  .card-columns {
-    column-count: 1 !important;
+@media only screen and (min-width: 576px) {
+  .skill-icon:hover {
+    transform: scale(1.3);
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+@media only screen and (max-width: 767px) {
   .card-columns {
     column-count: 2 !important;
   }
