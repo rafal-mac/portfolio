@@ -37,14 +37,22 @@ export default class ExperienceCard extends Vue {
   border-radius: 40px;
   transition: box-shadow 0.25s;
 }
+@media only screen and (max-width: 575px) {
+  .experience-card {
+    -webkit-box-shadow: 0px 15px 20px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 15px 20px 1px rgba(0,0,0,0.1);
+  }
+}
 @media only screen and (min-width: 1200px) {
   .experience-card {
     max-width: 80%;
   }
 }
-.experience-card:hover {
-  -webkit-box-shadow: 0px 15px 20px 1px rgba(0,0,0,0.1);
-  box-shadow: 0px 15px 20px 1px rgba(0,0,0,0.1);
+@media only screen and (min-width: 576px) {
+  .experience-card:hover {
+    -webkit-box-shadow: 0px 15px 20px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 15px 20px 1px rgba(0,0,0,0.1);
+  }
 }
 
 .logo {
