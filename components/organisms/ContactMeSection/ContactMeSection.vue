@@ -6,7 +6,7 @@
           Let's work together<span class="dot">.</span>
         </p>
       </div>
-      <div class="form-wrapper d-flex flex-column flex-lg-row p-5">
+      <div class="form-wrapper d-flex flex-column flex-lg-row p-4 p-sm-5">
         <div class="d-flex flex-column pl-lg-4">
           <p class="contact-me-title">
             Contact me
@@ -14,14 +14,14 @@
           <p class="contact-me-text">
             Send me a message and I will get back to you within 24 hours. (give or take)
           </p>
-          <div class="my-4 my-lg-auto">
+          <div class="mx-auto my-4 my-lg-auto">
             <b-button class="mb-2" variant="outline-primary" size="lg" href="tel:+447545133154">
-              <b-img-lazy class="mr-2" src="../../../assets/phone.svg" alt="phone" height="15px" />
-              +44 7545 133154
+              <b-img-lazy class="mr-0 mr-sm-2" src="../../../assets/phone.svg" alt="phone" height="15px" />
+              <span class="d-none d-sm-inline-block">+44 7545 133154</span>
             </b-button>
             <b-button class="mb-2" variant="outline-primary" size="lg" href="mailto:maciejewskirafal99@gmail.com">
-              <b-img-lazy class="mr-2" src="../../../assets/email.svg" alt="email" height="15px" />
-              maciejewskirafal99@gmail.com
+              <b-img-lazy class="mr-0 mr-sm-2" src="../../../assets/email.svg" alt="email" height="15px" />
+              <span class="d-none d-sm-inline-block">maciejewskirafal99@gmail.com</span>
             </b-button>
           </div>
           <div class="mx-auto mx-lg-0 mb-4 mt-auto">
@@ -104,6 +104,7 @@ input, textarea{
 .form-wrapper {
   background-color: #01044A;
   border-radius: 20px;
+  /* max-width: 300px; */
 }
 @media only screen and (min-width: 992px) {
   .form-wrapper {
