@@ -45,7 +45,17 @@
               <b-label>Email<b-input class="mt-2" type="email" name="email" /></b-label>
             </p>
             <p>
-              <b-label>Message<br> <b-textarea class="mt-2" size="lg" rows="6" name="message" no-resize /></b-label>
+              <b-label>
+                Message<br>
+                <b-textarea
+                  class="mt-2"
+                  type="text"
+                  size="lg"
+                  rows="6"
+                  name="message"
+                  no-resize
+                />
+              </b-label>
             </p>
             <p>
               <b-button variant="primary" type="submit">
