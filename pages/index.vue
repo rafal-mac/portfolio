@@ -36,32 +36,5 @@ import ContactMeSection from '~/components/organisms/ContactMeSection/ContactMeS
   }
 })
 export default class Index extends Vue {
-  section: HTMLElement | null = null;
-  currentPixel: number = 0;
-
-  mounted (): void {
-    this.section = document.querySelector('#scroll')
-    this.currentPixel = window.pageYOffset
-
-    this.looper()
-  }
-
-  looper (): void {
-    const newPixel = window.pageYOffset
-    const diff = newPixel - this.currentPixel
-    const speed = diff * 0.05
-
-    this.section!.style.transform = 'skewY(' + speed + 'deg)'
-
-    this.currentPixel = newPixel
-
-    requestAnimationFrame(this.looper)
-  }
 }
 </script>
-<style>
-#scroll {
-  transition: transform .25s;
-  will-change: transform;
-}
-</style>
