@@ -39,6 +39,26 @@
         <div class="form p-4 ml-auto">
           <form name="contact" method="POST" data-netlify="true">
             <p>
+              <label>Your Name: <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Your Role: <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select></label>
+            </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+          <!-- <form name="contact" method="POST" data-netlify="true">
+            <p>
               <b-label>Your Name<b-input class="mt-2" type="text" name="name" /></b-label>
             </p>
             <p>
@@ -64,7 +84,7 @@
                 </div>
               </b-button>
             </p>
-          </form>
+          </form> -->
         </div>
       </div>
     </div>
