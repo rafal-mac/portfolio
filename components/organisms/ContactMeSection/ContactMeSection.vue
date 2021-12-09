@@ -37,7 +37,8 @@
           </div>
         </div>
         <div class="form p-4 ml-auto">
-          <form name="contact" method="POST" data-netlify="true">
+          <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" netlify>
+            <input type="hidden" name="form-name" value="contact">
             <p>
               <label for="name">Your Name:</label>
               <input class="w-100" type="text" name="name">
