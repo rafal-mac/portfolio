@@ -4,7 +4,7 @@
       <p class="big-text">
         Hello<span class="dot">.</span>
         <br>
-        I am Rafal
+        I am Rafał
       </p>
       <who-am-i class="position-absolute who-am-i" />
     </div>

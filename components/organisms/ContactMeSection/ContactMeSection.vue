@@ -39,52 +39,23 @@
         <div class="form p-4 ml-auto">
           <form name="contact" method="POST" data-netlify="true">
             <p>
-              <label>Your Name: <input type="text" name="name" /></label>
+              <label for="name">Your Name:</label>
+              <input class="w-100" type="text" name="name">
             </p>
             <p>
-              <label>Your Email: <input type="email" name="email" /></label>
+              <label for="email">Your Email:</label>
+              <input class="w-100" type="email" name="email">
             </p>
             <p>
-              <label>Your Role: <select name="role[]" multiple>
-                <option value="leader">Leader</option>
-                <option value="follower">Follower</option>
-              </select></label>
-            </p>
-            <p>
-              <label>Message: <textarea name="message"></textarea></label>
-            </p>
-            <p>
-              <button type="submit">Send</button>
-            </p>
-          </form>
-          <!-- <form name="contact" method="POST" data-netlify="true">
-            <p>
-              <b-label>Your Name<b-input class="mt-2" type="text" name="name" /></b-label>
-            </p>
-            <p>
-              <b-label>Email<b-input class="mt-2" type="email" name="email" /></b-label>
-            </p>
-            <p>
-              <b-label>
-                Message<br>
-                <b-textarea
-                  class="mt-2"
-                  type="text"
-                  size="lg"
-                  rows="6"
-                  name="message"
-                  no-resize
-                />
-              </b-label>
+              <label for="message">Message:</label>
+              <textarea class="w-100" name="message" />
             </p>
             <p>
               <b-button variant="primary" type="submit">
-                <div class="my-2 mx-3">
-                  Send message
-                </div>
+                Send
               </b-button>
             </p>
-          </form> -->
+          </form>
         </div>
       </div>
     </div>

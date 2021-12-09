@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "I&#39;m a web dev",
-  "author": "Rafal Maciejewski",
+  "author": "Rafał Maciejewski",
   "private": true,
   "scripts": {
     "dev": "nuxt-ts",
