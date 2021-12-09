@@ -24,17 +24,7 @@
               <span class="d-none d-sm-inline-block">maciejewskirafal99@gmail.com</span>
             </b-button>
           </div>
-          <div class="mx-auto mx-lg-0 mb-4 mt-auto">
-            <a href="https://www.linkedin.com/in/rafa%C5%82-maciejewski-908260136/">
-              <b-img-lazy class="social-icon" src="../../../assets/linkedin.svg" alt="linkedin" height="50px" />
-            </a>
-            <a href="https://twitter.com/heblushed">
-              <b-img-lazy class="social-icon" src="../../../assets/twitter.svg" alt="twitter" height="50px" />
-            </a>
-            <a href="https://www.instagram.com/serowy_toast/">
-              <b-img-lazy class="social-icon" src="../../../assets/instagram.svg" alt="instagram" height="50px" />
-            </a>
-          </div>
+          <social-icons class="mx-auto mx-lg-0 mb-4 mt-auto" />
         </div>
         <div class="form p-4 ml-auto">
           <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" netlify>
@@ -65,24 +55,18 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
+import SocialIcons from '~/components/molecules/SocialIcons/SocialIcons.vue'
 
-@Component
+@Component({
+  components: {
+    SocialIcons
+  }
+})
 export default class ContactMeSection extends Vue {
 
 }
 </script>
 <style scoped>
-.social-icon {
-  transition: transform 0.3s;
-  padding: 10px;
-  border-radius: 10%;
-}
-
-.social-icon:hover {
-  transform: scale(1.3);
-  background-color: #027BFC;
-}
-
 input, textarea{
     background-color: #f0f0f2;
     border: none;
@@ -124,7 +108,6 @@ input, textarea{
     width: 45%;
   }
 }
-
 
 .fullscreen-contact-me {
   height: 100vh;

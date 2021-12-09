@@ -13,14 +13,20 @@
       <a href="#contact-me" class="link mr-auto" @click="toggleActive">
         Contact me
       </a>
+      <social-icons bg-blue class="mr-auto mt-5" />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue, Prop, Emit } from 'nuxt-property-decorator'
+import SocialIcons from '~/components/molecules/SocialIcons/SocialIcons.vue'
 
-@Component
+@Component({
+  components: {
+    SocialIcons
+  }
+})
 export default class Navbar extends Vue {
   @Prop({ type: Boolean }) readonly isActive!: boolean;
 
