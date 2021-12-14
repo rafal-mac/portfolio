@@ -67,7 +67,7 @@
 
       <experience-card
         class="mt-3"
-      position-name="Junior Product Manager"
+        position-name="Junior Product Manager"
         company-name="Coordinate Sport"
         position-link="https://coordinate.cloud/"
         date="October 2019 – June 2020"

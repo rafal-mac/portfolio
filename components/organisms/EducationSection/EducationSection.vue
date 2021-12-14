@@ -32,22 +32,11 @@
             First year: <b>First Class</b>
           </p>
           <p>
-            COMPLETED MODULES:
+            • <b>Academic Achievement Scholarship</b>, Department of Computer Science, The University of Sheffield 2018
           </p>
-          <b-container>
-            <b-row>
-              <b-col
-                v-for="module in modules"
-                :key="module"
-                sm="6"
-                lg="4"
-              >
-                <p>
-                  {{ module }}
-                </p>
-              </b-col>
-            </b-row>
-          </b-container>
+          <p>
+            • <b>Scholarship based on First Class Performance</b>, The University of Sheffield 2019
+          </p>
         </template>
       </experience-card>
 
@@ -80,17 +69,15 @@
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
 import ExperienceCard from '~/components/molecules/ExperienceCard/ExperienceCard.vue'
-import { modules } from '~/lib/modules'
 
 @Component({
   components: {
     ExperienceCard
   }
 })
-export default class EducationSection extends Vue {
-  modules: Array<String> = modules;
-}
+export default class EducationSection extends Vue {}
 </script>
+
 <style scoped>
 @media only screen and (max-width: 767px) {
   .card-columns {

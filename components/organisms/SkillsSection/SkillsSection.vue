@@ -46,7 +46,12 @@ export default class ExperienceSection extends Vue {
 <style scoped>
 .background {
   background-color: rgba(0,0,0,0.05);
-  border-radius: 40px;
+  border-radius: 20px;
+}
+@media only screen and (min-width: 576px) {
+  .background:hover .skills-title::after {
+      width: 25%;
+  }
 }
 
 .skills-title-wrapper {
@@ -57,7 +62,6 @@ export default class ExperienceSection extends Vue {
     font-size: 3rem;
   }
 }
-
 .skills-title::after {
     content: "";
     position: absolute;
@@ -66,6 +70,7 @@ export default class ExperienceSection extends Vue {
     width: 15%;
     height: 10px;
     background: #007bff;
+    transition: width 0.5s;
 }
 
 @media only screen and (max-width: 767px) {

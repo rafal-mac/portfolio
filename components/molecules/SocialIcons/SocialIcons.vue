@@ -6,9 +6,6 @@
     <a href="https://twitter.com/heblushed">
       <b-img-lazy class="social-icon mr-2" :class="{'blue-background' : bgBlue}" src="../../../assets/twitter.svg" alt="twitter" height="50px" />
     </a>
-    <a href="https://www.instagram.com/serowy_toast/">
-      <b-img-lazy class="social-icon" :class="{'blue-background' : bgBlue}" src="../../../assets/instagram.svg" alt="instagram" height="50px" />
-    </a>
   </div>
 </template>
 

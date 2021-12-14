@@ -4,7 +4,7 @@
     <div class="mx-4 container mx-auto">
       <profile />
       <div class="d-flex flex-column">
-        <div id="experience">
+        <div id="experience" class="mb-5">
           <experience-section />
         </div>
         <div id="skills" class="mb-5">
