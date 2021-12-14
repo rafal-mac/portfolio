@@ -17,7 +17,7 @@ import { Component, Vue } from 'nuxt-property-decorator'
 @Component
 export default class WhoAmI extends Vue {
   isLoading: boolean = false;
-  whoAmI: string[] = ['web developer', 'design aficionado', 'tech enthusiast', 'team player']
+  whoAmI: string[] = ['web developer', 'design lover', 'tech enthusiast', 'team player']
 
   mounted (): void {
     this.toggleIsLoading()

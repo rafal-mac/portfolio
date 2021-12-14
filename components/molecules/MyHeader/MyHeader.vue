@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="header d-flex flex-row justify-content-between">
-      <h1 class="text-dark">
+      <h1 class="portfolio my-auto">
         portfolio_
       </h1>
       <burger-icon class="burger" :is-active="isActive" @toggle-active="toggleActive" />
@@ -39,5 +39,15 @@ export default class Header extends Vue {
     background: transparent;
     transition: top 0.3s ease-in-out;
     padding: 40px;
+}
+
+.portfolio {
+  font-size: 7vw;
+  line-height: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .portfolio {
+    font-size: 4vw;
+  }
 }
 </style>

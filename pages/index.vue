@@ -1,16 +1,16 @@
 <template>
   <div>
     <my-header />
-    <div id="scroll" class="mx-4">
+    <div class="mx-4 container mx-auto">
       <profile />
       <div class="d-flex flex-column">
         <div id="experience">
           <experience-section />
         </div>
-        <div id="skills">
+        <div id="skills" class="mt-3">
           <skills-section />
         </div>
-        <div id="contact-me">
+        <div id="contact-me" class="my-5">
           <contact-me-section />
         </div>
       </div>

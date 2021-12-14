@@ -1,5 +1,5 @@
 <template>
-  <div class="fullscreen-skills">
+  <div>
     <div>
       <div class="d-flex position-relative skills-title-wrapper mx-auto mb-4">
         <p class="skills-title mr-auto">
@@ -7,67 +7,16 @@
         </p>
       </div>
       <div>
-        <div class="container d-flex flex-column flex-md-row justify-content-between">
-          <div class="card-columns">
-            <b-img-lazy
-              src="../../../assets/html5.svg"
-              class="skill-icon card"
-              alt="html5"
-            />
-            <b-img-lazy
-              src="../../../assets/css3.svg"
-              class="skill-icon card"
-              alt="css3"
-            />
-            <b-img-lazy
-              src="../../../assets/javascript.svg"
-              class="skill-icon card"
-              alt="javascript"
-            />
-            <b-img-lazy
-              src="../../../assets/vue.svg"
-              class="skill-icon card"
-              alt="vue"
-            />
-            <b-img-lazy
-              src="../../../assets/nuxt.svg"
-              class="skill-icon card"
-              alt="nuxt"
-            />
-            <b-img-lazy
-              src="../../../assets/php.svg"
-              class="skill-icon card"
-              alt="php"
-            />
-            <b-img-lazy
-              src="../../../assets/jest.svg"
-              class="skill-icon card"
-              alt="jest"
-            />
-            <b-img-lazy
-              src="../../../assets/git.svg"
-              class="skill-icon card"
-              alt="git"
-            />
-            <b-img-lazy
-              src="../../../assets/mysql.svg"
-              class="skill-icon card"
-              alt="mysql"
-            />
-            <b-img-lazy
-              src="../../../assets/cypress.svg"
-              class="skill-icon card"
-              alt="cypress"
-            />
-            <b-img-lazy
-              src="../../../assets/laravel.svg"
-              class="skill-icon card"
-              alt="laravel"
-            />
-            <b-img-lazy
-              src="../../../assets/sass.svg"
-              class="skill-icon card"
-              alt="sass"
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+          <div class="card-columns mx-auto">
+            <skill-badge
+              v-for="skill in skills"
+              :key="skill.name"
+              :name="skill.name"
+              :src="skill.src"
+              :alt="skill.name + ' icon'"
+              width="20px"
+              class="mb-2"
             />
           </div>
         </div>
@@ -78,10 +27,16 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-
-@Component
+import SkillBadge from '~/components/atoms/SkillBadge/SkillBadge.vue'
+import { skills, ISkill } from '~/lib/skills'
+@Component({
+  components: {
+    SkillBadge
+  }
+})
 export default class ExperienceSection extends Vue {
   infoClicked: boolean = false;
+  skills: Array<ISkill> = skills;
 
   openInfo (): void {
     this.infoClicked = !this.infoClicked
@@ -89,22 +44,13 @@ export default class ExperienceSection extends Vue {
 }
 </script>
 <style scoped>
-.bro {
-  display: none;
-}
-.fullscreen-skills {
-  min-height: 100vh;
-}
-
 .skills-title-wrapper {
-  font-size: 2.5rem;
-  width: 100%;
+  font-size: 2rem;
   padding-top: 5%;
 }
 @media only screen and (min-width: 1200px) {
   .skills-title-wrapper {
-    width: 80%;
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 
@@ -113,30 +59,9 @@ export default class ExperienceSection extends Vue {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 25%;
+    width: 15%;
     height: 10px;
     background: #007bff;
-}
-
-.skill-icon {
-  height: 100px;
-  width: 100px;
-  margin: 30px auto;
-  transition: transform 0.3s;
-  border: none;
-}
-@media only screen and (min-width: 576px) {
-  .skill-icon {
-    height: 150px;
-    width: 150px;
-    margin: 30px
-  }
-}
-
-@media only screen and (min-width: 576px) {
-  .skill-icon:hover {
-    transform: scale(1.3);
-  }
 }
 
 @media only screen and (max-width: 767px) {

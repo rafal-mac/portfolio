@@ -39,12 +39,12 @@ export default class Navbar extends Vue {
 
 <style>
 .link{
-  font-size: 50px;
+  font-size: 2rem;
   color: #007bff;
 }
 @media only screen and (min-width: 768px) {
   .link {
-    font-size: 80px;
+    font-size: 3rem;
   }
 }
 

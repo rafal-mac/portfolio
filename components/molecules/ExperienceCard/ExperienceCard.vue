@@ -10,9 +10,10 @@
           <b>{{ date }}</b>
         </p>
       </div>
-      <p>
+      <p v-if="employmentType">
         ({{ employmentType }})
       </p>
+      <hr :class="{'mt-3': employmentType}">
       <slot name="bulletpoints" />
     </div>
   </div>
@@ -27,7 +28,7 @@ export default class ExperienceCard extends Vue {
   @Prop({ type: String }) readonly companyName!: string;
   @Prop({ type: String }) readonly positionLink!: string;
   @Prop({ type: String }) readonly date!: string;
-  @Prop({ type: String }) readonly employmentType!: string;
+  @Prop({ type: String }) readonly employmentType?: string;
 }
 </script>
 <style scoped>
@@ -43,11 +44,6 @@ export default class ExperienceCard extends Vue {
     box-shadow: 0px 15px 20px 1px rgba(0,0,0,0.1);
   }
 }
-@media only screen and (min-width: 1200px) {
-  .experience-card {
-    max-width: 80%;
-  }
-}
 @media only screen and (min-width: 576px) {
   .experience-card:hover {
     -webkit-box-shadow: 0px 15px 20px 1px rgba(0,0,0,0.1);
@@ -55,12 +51,13 @@ export default class ExperienceCard extends Vue {
   }
 }
 
-.logo {
-  transition: transform 0.25s;
-}
-
-.experience-card:hover .logo {
-  transform: scale(1.10);
+@media only screen and (min-width: 576px) {
+  .logo {
+    transition: transform 0.25s;
+  }
+  .experience-card:hover .logo {
+    transform: scale(1.10);
+  }
 }
 
 .position-name {
