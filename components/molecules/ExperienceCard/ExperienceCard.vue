@@ -3,7 +3,7 @@
     <slot />
     <div class="px-4 pb-4 pb-md-0 my-auto">
       <div class="d-flex align-items-center justify-content-between">
-        <p class="position-name mb-0">
+        <p class="position-name my-auto">
           <b>{{ positionName }} - <a class="text-decoration-none" :href="positionLink">{{ companyName }}</a></b>
         </p>
         <p class="d-none d-lg-block mb-0">

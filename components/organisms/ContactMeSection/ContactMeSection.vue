@@ -2,7 +2,7 @@
   <div class="d-flex flex-column">
     <div class="d-flex position-relative contact-me-section-title-wrapper mb-4">
       <p class="contact-me-section-title mr-auto">
-        Let's work together<span class="dot">.</span>
+        &nbsp;&nbsp;Let's work together<span class="dot">.</span>
       </p>
     </div>
     <div class="mx-auto form-wrapper d-flex flex-column flex-lg-row p-4 p-sm-5">
@@ -65,7 +65,7 @@ export default class ContactMeSection extends Vue {
 }
 </script>
 <style scoped>
-input, textarea{
+input, textarea {
     background-color: #f0f0f2;
     border: none;
 }
@@ -88,11 +88,6 @@ input, textarea{
 .form-wrapper {
   background-color: #01044A;
   border-radius: 20px;
-}
-@media only screen and (min-width: 992px) {
-  .form-wrapper {
-    width: 1000px;
-  }
 }
 
 .form {

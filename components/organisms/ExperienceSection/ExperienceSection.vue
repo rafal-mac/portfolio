@@ -1,9 +1,9 @@
 <template>
   <div class="d-flex">
     <div class="m-auto">
-      <div class="d-flex position-relative experience-title-wrapper mx-auto">
+      <div class="d-flex position-relative experience-title-wrapper mx-auto mb-4">
         <p class="experience-title mr-auto">
-          Where did I work?
+          &nbsp;&nbsp;Where did I work?
         </p>
       </div>
       <experience-card
@@ -67,7 +67,7 @@
 
       <experience-card
         class="mt-3"
-        position-name="Junior Technical Product Manager"
+      position-name="Junior Product Manager"
         company-name="Coordinate Sport"
         position-link="https://coordinate.cloud/"
         date="October 2019 – June 2020"
@@ -77,7 +77,6 @@
           <b-img-lazy
             src="../../../assets/coordinate_logo.svg"
             class="logo"
-            height="210px"
             width="210px"
             alt="coordinate sport logo"
           />

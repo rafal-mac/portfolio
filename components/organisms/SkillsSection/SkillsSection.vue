@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="background py-5">
     <div>
       <div class="d-flex position-relative skills-title-wrapper mx-auto mb-4">
         <p class="skills-title mr-auto">
-          What can I do?
+          &nbsp;&nbsp;What can I use?
         </p>
       </div>
       <div>
@@ -44,9 +44,13 @@ export default class ExperienceSection extends Vue {
 }
 </script>
 <style scoped>
+.background {
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 40px;
+}
+
 .skills-title-wrapper {
   font-size: 2rem;
-  padding-top: 5%;
 }
 @media only screen and (min-width: 1200px) {
   .skills-title-wrapper {

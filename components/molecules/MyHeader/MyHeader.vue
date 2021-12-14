@@ -4,6 +4,9 @@
       <h1 class="portfolio my-auto">
         portfolio_
       </h1>
+      <b-button href="#contact-me" variant="outline-success" size="md" class="d-none d-md-flex ml-auto mr-5 mb-1">
+        <span class="my-auto">CONTACT ME</span>
+      </b-button>
       <burger-icon class="burger" :is-active="isActive" @toggle-active="toggleActive" />
     </div>
     <navbar :is-active="isActive" @toggle-active="toggleActive" />
