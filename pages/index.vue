@@ -1,6 +1,5 @@
 <template>
   <div>
-    <my-header />
     <div class="mx-4 container mx-auto">
       <profile />
       <div class="d-flex flex-column">

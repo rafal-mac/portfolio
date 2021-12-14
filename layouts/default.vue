@@ -1,8 +1,21 @@
 <template>
   <div>
+    <my-header />
     <nuxt />
   </div>
 </template>
+
+<script lang="ts">
+import { Component, Vue } from 'nuxt-property-decorator'
+import MyHeader from '~/components/molecules/MyHeader/MyHeader.vue'
+
+@Component({
+  components: {
+    MyHeader
+  }
+})
+export default class DefaultLayout extends Vue {}
+</script>
 
 <style>
 html {

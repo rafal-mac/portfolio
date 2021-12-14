@@ -17,6 +17,7 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
+        as: 'style',
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'
       }
