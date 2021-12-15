@@ -1,11 +1,8 @@
 <template>
   <div :class="{ 'is-active': isActive }" class="navbar">
     <div class="d-flex flex-column">
-      <a href="#experience" class="link mr-auto  d-sm-block d-none" @click="toggleActive">
+      <a href="#experience" class="link mr-auto" @click="toggleActive">
         Experience
-      </a>
-      <a href="#experience" class="link mr-auto  d-sm-none d-block" @click="toggleActive">
-        Jobs
       </a>
       <a href="#skills" class="link mr-auto" @click="toggleActive">
         Skills
