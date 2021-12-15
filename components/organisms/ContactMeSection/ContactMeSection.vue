@@ -112,7 +112,6 @@ input, textarea {
 @media only screen and (min-width: 1200px) {
   .contact-me-section-title-wrapper {
     width: 80%;
-    font-size: 3rem;
   }
 }
 

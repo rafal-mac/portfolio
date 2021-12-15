@@ -57,11 +57,7 @@ export default class ExperienceSection extends Vue {
 .skills-title-wrapper {
   font-size: 2rem;
 }
-@media only screen and (min-width: 1200px) {
-  .skills-title-wrapper {
-    font-size: 3rem;
-  }
-}
+
 .skills-title::after {
     content: "";
     position: absolute;

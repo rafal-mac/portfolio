@@ -118,11 +118,6 @@ export default class ExperienceSection extends Vue {
 .experience-title-wrapper {
   font-size: 2rem;
 }
-@media only screen and (min-width: 1200px) {
-  .experience-title-wrapper {
-    font-size: 3rem;
-  }
-}
 
 .experience-title::before {
   content: "";

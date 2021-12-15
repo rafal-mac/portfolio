@@ -42,12 +42,12 @@ export default class WhoAmI extends Vue {
 </script>
 <style>
 .additional-info {
-  font-size: 7vw;
+  font-size: 1.5rem;
   line-height: 100%;
 }
 @media only screen and (min-width: 768px) {
   .additional-info {
-    font-size: 4vw;
+    font-size: 2rem;
   }
 }
 

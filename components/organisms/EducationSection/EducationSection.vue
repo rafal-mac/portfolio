@@ -99,11 +99,6 @@ export default class EducationSection extends Vue {}
 .education-title-wrapper {
   font-size: 2rem;
 }
-@media only screen and (min-width: 1200px) {
-  .education-title-wrapper {
-    font-size: 3rem;
-  }
-}
 
 .education-title::before {
   content: "";

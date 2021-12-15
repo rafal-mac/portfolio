@@ -42,11 +42,6 @@ export default class Navbar extends Vue {
   font-size: 2rem;
   color: #007bff;
 }
-@media only screen and (min-width: 768px) {
-  .link {
-    font-size: 3rem;
-  }
-}
 
 .navbar {
   position: fixed;

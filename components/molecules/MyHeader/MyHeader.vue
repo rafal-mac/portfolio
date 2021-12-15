@@ -45,12 +45,7 @@ export default class Header extends Vue {
 }
 
 .portfolio {
-  font-size: 7vw;
+  font-size: 2rem;
   line-height: 100%;
-}
-@media only screen and (min-width: 768px) {
-  .portfolio {
-    font-size: 4vw;
-  }
 }
 </style>
