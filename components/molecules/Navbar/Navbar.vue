@@ -10,6 +10,9 @@
       <a href="#skills" class="link mr-auto" @click="toggleActive">
         Skills
       </a>
+      <a href="#education" class="link mr-auto" @click="toggleActive">
+        Education
+      </a>
       <a href="#contact-me" class="link mr-auto" @click="toggleActive">
         Contact me
       </a>
