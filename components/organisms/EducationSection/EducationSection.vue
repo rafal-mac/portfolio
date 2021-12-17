@@ -15,15 +15,12 @@
         employment-type="with a Year in Industry"
         date="September 2018 - June 2022"
       >
-        <picture class="p-4 my-auto mx-auto">
-          <source srcset="/uni_of_sheffield.svg" type="image/svg+xml">
-          <b-img-lazy
-            src="/uni_of_sheffield.svg"
-            class="logo"
-            width="210px"
-            alt="university of sheffield logo"
-          />
-        </picture>
+        <b-img-lazy
+          src="/uni_of_sheffield.svg"
+          class="logo p-4 my-auto mx-auto"
+          width="210px"
+          alt="university of sheffield logo"
+        />
         <template v-slot:bulletpoints>
           <p>
             Second year: <b>First Class</b>
@@ -47,15 +44,12 @@
         position-link="http://test.lzk.pl/"
         date="September 2015 – May 2018"
       >
-        <picture class="p-4 my-auto mx-auto">
-          <source srcset="/lzk.svg" type="image/svg+xml">
-          <b-img-lazy
-            src="/lzk.svg"
-            class="logo"
-            width="210px"
-            alt="high school logo"
-          />
-        </picture>
+        <b-img-lazy
+          src="/lzk.svg"
+          class="logo p-4 my-auto mx-auto"
+          width="210px"
+          alt="high school logo"
+        />
         <template v-slot:bulletpoints>
           <p>
             Equivalent to A-Levels: <b>A*A*A*</b> in Maths, Physics and English

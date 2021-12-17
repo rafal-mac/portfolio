@@ -1,15 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-/* turn off smooth scrolling for users with that preference */
-@media screen and (prefers-reduced-motion: reduce) {
-	html {
-		scroll-behavior: auto;
-	}
-}
-
 body {
   font-family: 'Poppins', sans-serif;
-  /* FIXME: this is a hacky solution to the overflow caused by the spinner */
-  overflow-x: hidden;
 }

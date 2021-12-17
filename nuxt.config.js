@@ -15,12 +15,7 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        as: 'style',
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'
-      }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
   /*
@@ -40,8 +35,14 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    '@nuxt/typescript-build'
+    '@nuxt/typescript-build',
+    '@nuxtjs/google-fonts'
   ],
+  googleFonts: {
+    families: {
+      Poppins: [500]
+    }
+  },
   /*
   ** Nuxt.js modules
   */
@@ -66,7 +67,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
+    extend (_, __) {
     }
   }
 }

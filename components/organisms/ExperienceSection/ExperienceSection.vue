@@ -12,15 +12,12 @@
         position-link="https://www.clear-links.co.uk/"
         date="June 2020 - Present"
       >
-        <picture class="p-4 my-auto mx-auto">
-          <source srcset="~/assets/clear_links_logo.svg" type="image/svg+xml">
-          <b-img-lazy
-            src="../../../assets/clear_links_logo.svg"
-            class="logo"
-            width="210px"
-            alt="clear links logo"
-          />
-        </picture>
+        <b-img-lazy
+          src="../../../assets/clear_links_logo.svg"
+          class="logo p-4 my-auto mx-auto"
+          width="210px"
+          alt="clear links logo"
+        />
         <template v-slot:bulletpoints>
           <p>
             • Using .NET and React/Redux to create administration panels and timetabling/management tools.
@@ -39,15 +36,12 @@
         date="June 2020 - July 2021"
         employment-type="Industry Placement"
       >
-        <picture class="p-4 my-auto mx-auto">
-          <source srcset="~/assets/tutorful_logo.png" type="image/svg+xml">
-          <b-img-lazy
-            src="../../../assets/tutorful_logo.png"
-            class="logo"
-            width="210px"
-            alt="tutorful logo"
-          />
-        </picture>
+        <b-img-lazy
+          src="../../../assets/tutorful_logo.png"
+          class="logo p-4 my-auto mx-auto"
+          width="210px"
+          alt="tutorful logo"
+        />
         <template v-slot:bulletpoints>
           <p>
             • Worked in small, autonomous teams who favoured continuous integration and delivery, and test-driven development
@@ -72,15 +66,12 @@
         position-link="https://coordinate.cloud/"
         date="October 2019 – June 2020"
       >
-        <picture class="p-4 my-auto mx-auto">
-          <source srcset="~/assets/coordinate_logo.svg" type="image/svg+xml">
-          <b-img-lazy
-            src="../../../assets/coordinate_logo.svg"
-            class="logo"
-            width="210px"
-            alt="coordinate sport logo"
-          />
-        </picture>
+        <b-img-lazy
+          src="../../../assets/coordinate_logo.svg"
+          class="logo p-4 my-auto mx-auto"
+          width="210px"
+          alt="coordinate sport logo"
+        />
         <template v-slot:bulletpoints>
           <p>
             • Managed a team of two developers to deliver an outstanding product driven by data
