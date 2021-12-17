@@ -39,6 +39,7 @@ export default {
     '@nuxtjs/google-fonts'
   ],
   googleFonts: {
+    display: 'swap',
     families: {
       Poppins: [500]
     }
