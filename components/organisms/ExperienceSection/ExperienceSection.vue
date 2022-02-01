@@ -10,7 +10,7 @@
         position-name="Fullstack Web Developer"
         company-name="Clear Links"
         position-link="https://www.clear-links.co.uk/"
-        date="June 2020 - Present"
+        date="November 2021 - Present"
       >
         <b-img-lazy
           src="../../../assets/clear_links_logo.svg"
@@ -23,7 +23,7 @@
             • Using .NET and React/Redux to create administration panels and timetabling/management tools.
           </p>
           <p>
-            • Researched technologies and sucessfuly recreated a web application in React Native for iOS and Android
+            • Researched technologies and successfuly recreated a web application in React Native for iOS and Android
           </p>
         </template>
       </experience-card>
